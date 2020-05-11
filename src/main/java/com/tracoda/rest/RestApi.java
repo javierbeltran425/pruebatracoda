@@ -14,6 +14,11 @@ public class RestApi {
     @Autowired
     FilesController filesController;
 
+    @RequestMapping(value={""}, method = RequestMethod.GET)
+    public String saludo(){
+        return "hola mundo";
+    }
+
     @RequestMapping(value={"files/all"}, method = RequestMethod.GET)
     public Iterable<Files> getAllFiles(){
         return filesController.getAllFiles();
