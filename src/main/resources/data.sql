@@ -1,0 +1,1 @@
+insert into archivo(nombre) values ('archivo1');
